@@ -4,9 +4,5 @@
       "source": "/(.*)",
       "destination": "/$1.html"
     }
-  ],
-  "error": {
-    "statusCode": 404,
-    "destination": "/404"
-  }
+  ]
 }
