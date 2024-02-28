@@ -14,5 +14,5 @@
   ],
   "headers": [],
   "cleanUrls": true,
-  "trailingSlash": "never"
+  "trailingSlash": false
 }
