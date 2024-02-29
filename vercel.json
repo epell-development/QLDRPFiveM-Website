@@ -12,8 +12,8 @@
       "statusCode": 404
     },
     {
-      "source": "/(.*)",
-      "destination": "https://qldrp.com/UnderMaintanance.html",
+      "source": "/index",
+      "destination": "/",
       "statusCode": 302
     }
   ],
