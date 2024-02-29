@@ -13,7 +13,8 @@
     },
     {
       "source": "/",
-      "destination": "/UnderMaintenance.html",
+      "destination": "/UnderMaintanance.html",
+      "statusCode": 302
     }
   ],
   "headers": [],
