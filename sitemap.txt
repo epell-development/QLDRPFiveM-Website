@@ -9,6 +9,13 @@ https://qldrp.com/game-rules
 https://qldrp.com/server-rules
 https://qldrp.com/UnderMaintenance
 https://qldrp.com/apply/civ
+https://qldrp.com/apply/civ/business/sme-security
+https://qldrp.com/apply/staff
 https://qldrp.com/apply/qps
 https://qldrp.com/apply/qas
 https://qldrp.com/apply/qfes
+https://qldrp.com/apply/qfes/aux
+https://qldrp.com/apply/qfes/rfs
+https://qldrp.com/apply/qfes/media
+https://qldrp.com/apply/qfes/firecomm
+https://qldrp.com/apply/qfes/research-scientific
