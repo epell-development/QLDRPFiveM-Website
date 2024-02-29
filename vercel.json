@@ -12,7 +12,7 @@
       "statusCode": 404
     },
     {
-      "source": "/(.*)",
+      "source": "/",
       "destination": "/UnderMaintenance.html",
     }
   ],
