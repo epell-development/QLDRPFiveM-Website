@@ -13,6 +13,10 @@ https://qldrp.com/apply/civ
 https://qldrp.com/apply/civ/business/sme-security
 https://qldrp.com/apply/staff
 https://qldrp.com/apply/qps
+https://qldrp.com/apply/qps/psrt
+https://qldrp.com/apply/qps/rpc
+https://qldrp.com/apply/qps/sert
+https://qldrp.com/apply/qps/vkr
 https://qldrp.com/apply/qas
 https://qldrp.com/apply/qfes
 https://qldrp.com/apply/qfes/aux
