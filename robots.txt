@@ -1,0 +1,4 @@
+# https://www.robotstxt.org/robotstxt.html
+# Luke, I am your father!
+User-agent: *
+Disallow:

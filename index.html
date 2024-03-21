@@ -55,7 +55,7 @@
                <div class="col-md-8 col-xl-6 col-xxl-9 mx-auto" style="width: 824px;">
                   <div class="text-center">
                      <h1 class="fw-bold" style="color: #465fc8;font-size: 55px;font-weight: bold;text-align: left;">The Best QLD FiveM Roleplay Server</h1>
-                     <p class="fw-bold mb-2" style="color: rgb(186,186,186);text-align: left;font-size: 15px;"><span style="font-weight: normal !important;">QLDRP is a Queensland based Australian vMenu roleplay server founded in 2022. We are fully whitelisted, with QPS fully operational and hopefully QFRS and QAS in the future. We also hope to open civilian services, such as RACQ and Surf Rescue.</span></p>
+                     <p class="fw-bold mb-2" style="color: rgb(186,186,186);text-align: left;font-size: 15px;"><span style="font-weight: normal !important;">QLDRP is a Queensland based Australian vMenu roleplay server founded in 2022. We are fully whitelisted, with QPS & QFES fully operational and hopefully QAS in the future. We also hope to open civilian services, such as RACQ and Surf Rescue.</span></p>
                      <div class="col" style="text-align: left;"><a class="btn btn-primary" role="button" style="border-radius: 5px;background: rgb(70,95,200);color: rgb(249,249,249);" href="/discord" target="_blank"><span style="font-weight: normal !important;">Join Now</span></a></div>
                   </div>
                </div>
@@ -89,11 +89,28 @@
                 </div>
             </div>
       </header>
-      <section class="py-5" style="height: 148.938px;">
-         <div class="container text-center py-5">
-            <p class="mb-4" style="font-size: 1.3rem;"><span class="text-success"><strong>165+</strong></span>&nbsp;of the best players have joined, so we must be doing something right!</p>
-         </div>
-      </section>
+      <section class="py-5" style="height: 148.938px;" id="counters">
+        <div class="container text-center py-5">
+           <script>
+               function fetchFivemPlayerCount() {
+                   fetch('/fetch_data.php')
+                       .then(response => response.json())
+                       .then(data => {
+                           const playerCount = data.clients;
+                           const maxPlayers = data.sv_maxclients;
+                           document.getElementById('fivem-player-count').innerText = `${playerCount}/${maxPlayers}`;
+                       })
+                       .catch(error => console.error('Error fetching player count:', error));
+               }
+               fetchFivemPlayerCount();
+               setInterval(fetchFivemPlayerCount, 30000);
+           </script>
+           <p class="mb-4" style="font-size: 1.3rem;"><span class="text-success" id="fivem-player-count"><strong>Loading</strong></span>&nbsp;current in-game players!</p>
+           <div class="col" style="text-align: center;"><a class="btn btn-primary" role="button" style="border-radius: 5px;background: rgb(70,95,200);color: rgb(249,249,249);" href="/join" target="_blank"><span style="font-weight: normal !important;">Connect to server (Must Be Whitelisted)</span></a></div>
+           <br>
+           <p class="mb-4" style="font-size: 1.3rem;"><span class="text-success"><strong>180+</strong></span>&nbsp;of the best players have joined, so we must be doing something right!</p>
+        </div>
+     </section>
       <section class="py-5 mt-5">
          <div class="container py-5" style="text-align: center;">
             <div class="row mb-5">
